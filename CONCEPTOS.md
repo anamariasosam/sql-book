@@ -1,6 +1,6 @@
 # Conceptos básicos de SQL
 
-* * \*
+* * *
 
 ## Claúsulas
 
@@ -32,6 +32,3 @@
 * **MIN:** obtener el valor mínimo de la columna seleccionada
 * **MAX:** Obtiene la cantidad máxima de una columna
 * **COUNT:** Cuenta el total de elementos según la condición deseada.
-
-
-
