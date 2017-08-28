@@ -1,0 +1,335 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Conceptos · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="peajes/SISTEMA-DE-PEAJES.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="CONCEPTOS.html">
+            
+                <a href="CONCEPTOS.html">
+            
+                    
+                    Conceptos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="peajes/SISTEMA-DE-PEAJES.html">
+            
+                <a href="peajes/SISTEMA-DE-PEAJES.html">
+            
+                    
+                    Sistema de peajes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="peajes/MODELO-RELACIONAL.html">
+            
+                <a href="peajes/MODELO-RELACIONAL.html">
+            
+                    
+                    Modelo Relacional y Datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="peajes/LISTADO-DE-CONSULTAS.html">
+            
+                <a href="peajes/LISTADO-DE-CONSULTAS.html">
+            
+                    
+                    Listado de Consultas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="peajes/CONSULTAS.html">
+            
+                <a href="peajes/CONSULTAS.html">
+            
+                    
+                    Solución Consultas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Conceptos</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="conceptos-b&#xE1;sicos-de-sql">Conceptos b&#xE1;sicos de SQL</h1>
+<hr>
+<h2 id="select">SELECT:</h2>
+<p>Obtiene filas de la base de datos y permite realizar la selecci&#xF3;n de una o varias filas o columnas de una o varias tablas.</p>
+<h2 id="cla&#xFA;sulas">Cla&#xFA;sulas</h2>
+<ul>
+<li><strong>SELECT nombre_Columnas:</strong> nombre de las columnas que se desean ver en el resultado de una consulta, se pueden listar columnas a calcular.</li>
+<li><strong>INTO nueva_tabla_desino:</strong> Usada para los resultados del SELECT, puede ser opcional</li>
+<li><strong>FROM nombre_tabla:</strong> tabla de donde voy a necesitar para realizar la consulta.</li>
+<li><strong>WHERE condiciones_B&#xFA;squeda:</strong> Puede omitirse si no hay condiciones de b&#xFA;squeda.</li>
+<li><strong>GROUP BY Columnas:</strong> permite agrupar un conjunto de columnas de valores repetidos y para los valores no repetidos, permite usar funciones de agregaci&#xF3;n. Puede omitirse.</li>
+<li><strong>HAVING:</strong> incluye los valores que el GROUP BY ha agrupado, Utiliza una condici&#xF3;n de b&#xFA;squeda para especificar los grupos. Puede omitirse.</li>
+<li><strong>ORDER BY nombre de columnas [ASC || DESC] :</strong> establecer la columna o columnas sobre las cuales las filas resultantes deben ser ordenadas. Puede omitirse.</li>
+</ul>
+<h2 id="otros-elementos-en-la-consulta">Otros elementos en la consulta:</h2>
+<ul>
+<li><strong>AS:</strong> Agrega un alias a la columna del SELECT</li>
+<li><strong>DISTINCT:</strong> Se usa para sacar registros no repetidos de una consulta, cuando la clave primaria no esta incluida en las columnas del SELECT.</li>
+<li><strong>Columnas calculadas:</strong> Son columnas donde su valor es hallado a partir de los valores de otras columnas.</li>
+</ul>
+<h2 id="condiciones-de-b&#xFA;squeda">Condiciones de b&#xFA;squeda:</h2>
+<ul>
+<li><strong>( =, &lt;&gt;, &gt;, &lt;, &gt;=, &lt;= ), BETWEEN:</strong> Son utilizados para comparar cadenas, expresiones aritm&#xE9;ticas y fechas.</li>
+<li><strong>AND,OR,NOT:</strong> Son utilizados para filtrar la selecci&#xF3;n en la consulta.</li>
+<li><strong>LIKE:</strong> hace una b&#xFA;squeda donde selecciona por la condici&#xF3;n luego del LIKE.</li>
+<li><strong>IS NULL:</strong> Cabe la posibilidad que en una columna exista un campo en el que no contengan valor alguno, por lo cual la consulta vuelve un valor NULL.</li>
+</ul>
+<h2 id="operaciones-b&#xE1;sicas">Operaciones b&#xE1;sicas:</h2>
+<ul>
+<li><strong>SUM:</strong> Sumar elemento de una columna</li>
+<li><strong>AVG:</strong> Obtener el promedio deseado</li>
+<li><strong>MIN:</strong> obtener el valor m&#xED;nimo de la columna seleccionada</li>
+<li><strong>MAX:</strong> Obtiene la cantidad m&#xE1;xima de una columna</li>
+<li><strong>COUNT:</strong> Cuenta el total de elementos seg&#xFA;n la condici&#xF3;n deseada.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introducción">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="peajes/SISTEMA-DE-PEAJES.html" class="navigation navigation-next " aria-label="Next page: Sistema de peajes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Conceptos","level":"1.2","depth":1,"next":{"title":"Sistema de peajes","level":"1.3","depth":1,"path":"peajes/SISTEMA-DE-PEAJES.md","ref":"peajes/SISTEMA-DE-PEAJES.md","articles":[{"title":"Modelo Relacional y Datos","level":"1.3.1","depth":2,"path":"peajes/MODELO-RELACIONAL.md","ref":"peajes/MODELO-RELACIONAL.md","articles":[]},{"title":"Listado de Consultas","level":"1.3.2","depth":2,"path":"peajes/LISTADO-DE-CONSULTAS.md","ref":"peajes/LISTADO-DE-CONSULTAS.md","articles":[]},{"title":"Solución Consultas","level":"1.3.3","depth":2,"path":"peajes/CONSULTAS.md","ref":"peajes/CONSULTAS.md","articles":[]}]},"previous":{"title":"Introducción","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"CONCEPTOS.md","mtime":"2017-08-28T15:38:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-28T16:00:12.135Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
